@@ -18,3 +18,4 @@ function getParameterByName(name, url = window.location.href) {
  const phone = getParameterByName('phone')
  console.log(phone)
 alert(`phone   ${phone}`);
+alert(`id from cookie`, document.cookie )
