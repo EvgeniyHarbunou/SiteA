@@ -1,11 +1,11 @@
-const urlParams = new URLSearchParams(window.location.search);
-const myParam = urlParams.get('myParam');
+// const urlParams = new URLSearchParams(window.location.search);
+// const myParam = urlParams.get('myParam');
 
 
 
-console.log(urlParams)
-console.log(myParam)
-console.log(window.location.search)
+// console.log(urlParams)
+// console.log(myParam)
+// console.log(window.location.search)
 
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -15,8 +15,6 @@ function getParameterByName(name, url = window.location.href) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-// console.log(getParameterByName('phone'));
-alert('url param phone', getParameterByName('phone'));
-
-alert(document.cookie); 
+ const phone = getParameterByName('phone')
+ console.log(phone)
+alert(`phone   ${phone}`);
